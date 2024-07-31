@@ -40,7 +40,7 @@ public class FolderService {
         for (Folder folder : folderList) {
             responseDtoList.add(new FolderResponseDto(folder));
         }
-        return null;
+        return responseDtoList;
     }
 
     private boolean isExistFolderName(String folderName, List<Folder> existFolderList) {
